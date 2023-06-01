@@ -23,12 +23,5 @@ export default {
 </template>
 
 <style lag="scss" scoped  >
-.gradientBackground{
-    background: rgb(1,1,47);
-    background: -moz-linear-gradient(0deg, rgba(1,1,47,1) 0%, rgba(11,25,83,1) 60%);
-    background: -webkit-linear-gradient(0deg, rgba(1,1,47,1) 0%, rgba(11,25,83,1) 60%);
-    background: linear-gradient(0deg, rgba(1,1,47,1) 0%, rgba(11,25,83,1) 60%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01012f",endColorstr="#0b1953",GradientType=1);
 
-}
 </style>

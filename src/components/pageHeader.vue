@@ -19,7 +19,7 @@
     </header>
 </template>
 
-<style lag="scss" scoped  >
+<style lang="scss" scoped  >
 header{
     padding: 1rem;
 }

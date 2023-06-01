@@ -12,7 +12,7 @@
                 <h1> <strong>Modern Solution !</strong> </h1>
             </div>
             <div>
-                <p>When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.</p>
+                <p class="textBlu">When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.</p>
             </div>
             <div>
                 <button class="buttonInverted">Try it Now</button>
@@ -27,14 +27,12 @@
     
 </template>
 
-<style lag="scss" scoped  >
+<style lang="scss" scoped  >
 .mainBox{
     display: flex;
     padding: 25px 0;
 }
-.width40{
-    width: 40%;
-}
+
 .alignItemCenter{
     display: flex;
     justify-content: center;
@@ -43,7 +41,6 @@
 }
 p{
     margin: 3rem 0;
-    color:#048AB8 ;
 }
 button{
     width: 180px !important;
@@ -51,9 +48,7 @@ button{
     text-align: center;
     margin-right: 1rem;
 }
-.width60{
-    width:60%;
-}
+
 h1{
     color: white;
     font-size: 3rem;

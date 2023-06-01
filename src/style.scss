@@ -5,7 +5,7 @@
 }
 
 .mainBox{
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
 
 }
@@ -50,4 +50,25 @@
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04a4d0",endColorstr="#1f3f83",GradientType=1);
         }
 
+    }
+
+    .gradientBackground{
+        background: rgb(1,1,47);
+        background: -moz-linear-gradient(0deg, rgba(1,1,47,1) 0%, rgba(11,25,83,1) 60%);
+        background: -webkit-linear-gradient(0deg, rgba(1,1,47,1) 0%, rgba(11,25,83,1) 60%);
+        background: linear-gradient(0deg, rgba(1,1,47,1) 0%, rgba(11,25,83,1) 60%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01012f",endColorstr="#0b1953",GradientType=1);
+    
+    }
+
+    .width40{
+        width: 40%;
+    }
+
+    .width60{
+        width:60%;
+    }
+
+    .textBlu{
+    color:#048AB8 !important;
     }
