@@ -18,6 +18,8 @@ export default {
         <pageHeader/>
         <jumbotron/>
     </div>
+    <pageMain/>
+    <pageFooter/>
 </template>
 
 <style lag="scss" scoped  >
