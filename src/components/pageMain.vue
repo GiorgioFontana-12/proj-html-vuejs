@@ -1,5 +1,29 @@
 <script >
-
+    import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    import 'swiper/css';
+    import 'swiper/css/navigation';
+    import 'swiper/css/pagination';
+    import 'swiper/css/scrollbar';
+    export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      const onSwiper = (swiper) => {
+        console.log(swiper);
+      };
+      const onSlideChange = () => {
+        console.log('slide change');
+      };
+      return {
+        onSwiper,
+        onSlideChange,
+        modules: [Navigation, Pagination, Scrollbar, A11y],
+      };
+    },
+  };
 
 </script>
 
@@ -63,6 +87,102 @@
 
                 </div>
             </section>
+
+            <section class="portfolio">
+                <div  >
+                    <div class="mainBox">
+                        <p class="colorRed">Portfolio</p>
+                        <h2>Latest <span>Work</span> </h2>
+                    </div>
+                    <div>
+                        <swiper class="center" :modules="modules" :slides-per-view="3" :space-between="0" navigation :pagination="{ clickable: true }"  @swiper="onSwiper" @slideChange="onSlideChange">
+                            <swiper-slide class="marginLeft">
+                                <div class="card">
+                                    <img src="../assets/images/8wa60okr-1-790x576.jpg" alt="">
+                                    <div>
+                                        <h4>Basket of Dlower on table</h4>
+                                        <p>Branding Strategy</p>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="card">
+                                    <img src="../assets/images/DRY-1-790x576.jpg" alt="">
+                                    <div>
+                                        <h4>Purinky Products</h4>
+                                        <p>Digital Experience</p>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="card">
+                                    <img src="../assets/images/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg" alt="">
+                                    <div>
+                                        <h4>Satisfy Poster</h4>
+                                        <p>Branding Strategy</p>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="card">
+                                    <img src="../assets/images/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg" alt="">
+                                    <div>
+                                        <h4></h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="card">
+                                    <img src="" alt="">
+                                    <div>
+                                        <h4></h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="card">
+                                    <img src="" alt="">
+                                    <div>
+                                        <h4></h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="card">
+                                    <img src="" alt="">
+                                    <div>
+                                        <h4></h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="card">
+                                    <img src="" alt="">
+                                    <div>
+                                        <h4></h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+                            
+                         </swiper>
+                    </div>
+
+                </div>
+
+            </section>
     </main>
 </template>
 
@@ -83,9 +203,7 @@ h2{
 span{
     font-weight: normal;
 }
-.colorRed{
-    color: #F9646C;
-}
+
 .cardBox{
     display: flex;
     justify-content: space-around;
@@ -150,7 +268,33 @@ h3{
     .marginLeft3rem{
         margin-left: 3rem;
     }
+    }
+
+.portfolio{
+    padding: 80px 0;
+    .marginLeft{
+        margin-left: 50px;
 
     }
+    .center{
+        padding: 80px 200px ;
+    }
+    .card{
+        width: 400px;
+        height: 310px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 120px -50px rgba(0,0,0,0.69);
+        -webkit-box-shadow: 1px 1px 120px -50px rgba(0,0,0,0.69);
+        -moz-box-shadow: 1px 1px 120px -50px rgba(0,0,0,0.69);
+        img{
+            display: block;
+            width: 100%;
+            height: 250px;
+            border-radius: 15px;
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+
 
 </style>
