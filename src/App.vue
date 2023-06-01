@@ -1,11 +1,16 @@
-<script setup>
-
+<script >
+import pageHeader from './components/pageHeader.vue'
+export default {
+    components: {
+        pageHeader
+    }
+}
 </script>
 
 <template>
-
+    <pageHeader/>
 </template>
 
-<style lag="scss" scoped>
+<style lag="scss" scoped  >
 
 </style>
